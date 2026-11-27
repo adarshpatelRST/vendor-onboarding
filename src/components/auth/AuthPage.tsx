@@ -192,11 +192,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                       }
                     }}
                     placeholder="Enter your email"
-                    className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${
-                      signInErrors.email
+                    className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${signInErrors.email
                         ? "border-red-500 focus:border-red-500"
                         : "border-slate-300 focus:border-blue-600"
-                    }`}
+                      }`}
                   />
                   {signInErrors.email && (
                     <p className="text-xs text-red-600 mt-1">
@@ -228,11 +227,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                         }
                       }}
                       placeholder="Enter your password"
-                      className={`w-full px-3.5 py-2.5 pr-10 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${
-                        signInErrors.password
+                      className={`w-full px-3.5 py-2.5 pr-10 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${signInErrors.password
                           ? "border-red-500 focus:border-red-500"
                           : "border-slate-300 focus:border-blue-600"
-                      }`}
+                        }`}
                     />
                     <button
                       type="button"
@@ -302,11 +300,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                       }
                     }}
                     placeholder="Enter your email"
-                    className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${
-                      signUpErrors.email
+                    className={`w-full px-3.5 py-2.5 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${signUpErrors.email
                         ? "border-red-500 focus:border-red-500"
                         : "border-slate-300 focus:border-blue-600"
-                    }`}
+                      }`}
                   />
                   {signUpErrors.email && (
                     <p className="text-xs text-red-600 mt-1">
@@ -379,11 +376,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                               ].map((rule, idx) => (
                                 <div
                                   key={idx}
-                                  className={`flex items-center gap-1.5 text-[11px] ${
-                                    rule.ok
+                                  className={`flex items-center gap-1.5 text-[11px] ${rule.ok
                                       ? "text-emerald-700 font-medium"
                                       : "text-slate-500"
-                                  }`}
+                                    }`}
                                 >
                                   {rule.ok ? (
                                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -416,11 +412,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                         }
                       }}
                       placeholder="Create a strong password"
-                      className={`w-full px-3.5 py-2.5 pr-10 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${
-                        signUpErrors.password
+                      className={`w-full px-3.5 py-2.5 pr-10 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${signUpErrors.password
                           ? "border-red-500 focus:border-red-500"
                           : "border-slate-300 focus:border-blue-600"
-                      }`}
+                        }`}
                     />
                     <button
                       type="button"
@@ -466,11 +461,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                         }
                       }}
                       placeholder="Confirm your password"
-                      className={`w-full px-3.5 py-2.5 pr-10 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${
-                        signUpErrors.confirmPassword
+                      className={`w-full px-3.5 py-2.5 pr-10 rounded-lg border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${signUpErrors.confirmPassword
                           ? "border-red-500 focus:border-red-500"
                           : "border-slate-300 focus:border-blue-600"
-                      }`}
+                        }`}
                     />
                     <button
                       type="button"
@@ -552,11 +546,10 @@ export function AuthPage({ onLoginSuccess }: AuthPageProps) {
                     type="button"
                     onClick={() => handleQuickLogin(user.id)}
                     title={`Quick Login: ${user.name} (${user.email})`}
-                    className={`flex items-center justify-between gap-1.5 px-3 py-2 rounded-xl border text-left transition-all cursor-pointer bg-white ${
-                      isInactive
+                    className={`flex items-center justify-between gap-1.5 px-3 py-2 rounded-xl border text-left transition-all cursor-pointer bg-white ${isInactive
                         ? "border-red-200 bg-red-50/30 opacity-60 cursor-not-allowed"
                         : "border-slate-200 hover:border-blue-500 hover:bg-blue-50/40 hover:shadow-xs active:scale-[0.99]"
-                    }`}
+                      }`}
                   >
                     <span className="text-xs font-semibold text-slate-800 truncate">
                       {displayLabel}
