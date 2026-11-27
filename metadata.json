@@ -1,0 +1,6 @@
+{
+  "name": "Vendora™",
+  "description": "Vendora™ (Powered by RustyStick Technologies LLP) — Vendor Onboarding, Orders & Invoices Portal with role-based governance, business-type routing, and audit trails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
